@@ -13,16 +13,26 @@
             width: 500px;
             border-collapse: collapse;
         }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(61, 61, 61);
             color: white;
         }
         td.num{
             text-align: right;
+        }
+
+        tbody> tr:nth-child(odd){ /*odd(2n) = ímpar e even (2n-1) = par*/
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -30,6 +40,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA TABELAS GRANDES
         Table
+            Caption
             THead
             TR, TD, TH
             TBody
@@ -39,10 +50,11 @@
     
     -->
     <table>
+        <caption>12 maiores populações do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
@@ -110,7 +122,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>126 315 491</strong></td>
             </tr>
         </tfoot>
