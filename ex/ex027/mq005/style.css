@@ -5,7 +5,7 @@
 }
 
 header {
-  background-color: gray;
+  background-color: #15616D;
 }
 
 header h1 {
@@ -39,18 +39,18 @@ nav a {
   display: block;
   padding: 10px;
   text-decoration: none;
-  background-color: rgb(71, 71, 71);
+  background-color: #001524;
   color: white;
   text-align: center;
-  border-top: 1px solid rgb(124, 124, 124);
+  border-top: 1px solid #000f1a;
 }
 
 nav a:hover {
-  background-color: rgb(167, 165, 165);
+  background-color: #022c4b;
 }
 
 body {
-  background-color: lightgray;
+  background-color: #C4F5FC;
 }
 
 main {
