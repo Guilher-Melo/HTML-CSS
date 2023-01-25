@@ -37,7 +37,7 @@
             <label for="isenha">Senha</label>
           </div>
           <input class="envio" type="submit" value="Entrar">
-          <button type="submit" class="button">Esqueci a senha</button>
+          <button type="submit" class="envio">Esqueci a senha</button>
         </form>
       </div>
     </section>
@@ -46,11 +46,7 @@
     const envio = document.querySelector('.envio');
     envio.addEventListener('submit', (e) => {
       e.preventDefault();
-    })
-
-    const button = document.querySelector('.button');
-    button.addEventListener('submit', (e) => {
-      e.preventDefault();
+      console.log('click');
     })
   </script>
 </body>
